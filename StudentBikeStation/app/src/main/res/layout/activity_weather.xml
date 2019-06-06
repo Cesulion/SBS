@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSub"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation_items"
+        style="@style/BottomNavigation"/>
+
+    <TextView
+        android:id="@+id/citynameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="City name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/temperatureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/citynameView"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Temperature"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/weatherImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_below="@id/citynameView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/temperatureView"
+        android:layout_toRightOf="@id/temperatureView"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" />
+
+    <TextView
+        android:id="@+id/weatherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureView"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/weather_item"
+        android:textSize="24sp"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/descView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherView"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="descweather"
+        android:textSize="24sp"
+        tools:visibility="invisible" />
+
+</RelativeLayout>

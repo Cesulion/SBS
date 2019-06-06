@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorItem">#ff9448</color>
+    <color name="colorItemDarker">#ff9448</color>
+    <color name="colorJeanBlue">#487fff</color>
+    <color name="colorBackground">#ff9448</color>
+
+
+    <color name="colorMain">#95a7ff</color>
+    <color name="colorSub">#ffe195</color>
+    <color name="colorSubSub">#ffac95</color>
+
+
+
+
+
+
+
+
+</resources>
